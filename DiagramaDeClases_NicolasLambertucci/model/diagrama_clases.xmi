@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagramaDeClases:Diagrama
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:diagramaDeClases="http://www.example.org/diagramaDeClases"
+    xsi:schemaLocation="http://www.example.org/diagramaDeClases diagramaDeClases.ecore">
+  <clase_diagrama
+      nombreClase="Persona">
+    <atributo_contenido
+        nombreAtributo="nombrePersona"/>
+    <atributo_contenido
+        nombreAtributo="edadPersona"
+        tipoAtributo="Int"/>
+    <atributo_contenido
+        nombreAtributo="profesionPersona"/>
+    <operacion_contenida
+        nombreOperacion="caminar"
+        retornoOperacion="void"/>
+    <operacion_contenida
+        nombreOperacion="correr"
+        retornoOperacion="Int"/>
+    <operacion_contenida
+        nombreOperacion="cantar"/>
+  </clase_diagrama>
+</diagramaDeClases:Diagrama>

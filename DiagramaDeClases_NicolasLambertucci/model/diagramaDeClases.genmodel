@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/DiagramaDeClases/src-gen" creationIcons="false"
+    editDirectory="/DiagramaDeClases.edit/src-gen" editorDirectory="/DiagramaDeClases.editor/src-gen"
+    modelPluginID="DiagramaDeClases" modelName="DiagramaDeClases" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>diagramaDeClases.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="DiagramaDeClases" disposableProviderFactory="true" ecorePackage="diagramaDeClases.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaDeClases.ecore#//Tipo_Visibilidad">
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipo_Visibilidad/private"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipo_Visibilidad/protected"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipo_Visibilidad/public"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipo_Visibilidad/package"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaDeClases.ecore#//Tipos_Predefinidos">
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipos_Predefinidos/String"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipos_Predefinidos/Int"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipos_Predefinidos/Double"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipos_Predefinidos/boolean"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagramaDeClases.ecore#//Tipo_Retorno">
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipo_Retorno/String"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipo_Retorno/Int"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipo_Retorno/Double"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipo_Retorno/boolean"/>
+      <genEnumLiterals ecoreEnumLiteral="diagramaDeClases.ecore#//Tipo_Retorno/void"/>
+    </genEnums>
+    <genClasses ecoreClass="diagramaDeClases.ecore#//Diagrama">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaDeClases.ecore#//Diagrama/clase_diagrama"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaDeClases.ecore#//Clase">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaDeClases.ecore#//Clase/nombreClase"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaDeClases.ecore#//Clase/atributo_contenido"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagramaDeClases.ecore#//Clase/operacion_contenida"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaDeClases.ecore#//Atributo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaDeClases.ecore#//Atributo/nombreAtributo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaDeClases.ecore#//Atributo/visibilidadAtributo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaDeClases.ecore#//Atributo/tipoAtributo"/>
+    </genClasses>
+    <genClasses ecoreClass="diagramaDeClases.ecore#//Operacion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaDeClases.ecore#//Operacion/nombreOperacion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaDeClases.ecore#//Operacion/visibilidadOperacion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagramaDeClases.ecore#//Operacion/retornoOperacion"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
