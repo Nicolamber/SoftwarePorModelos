@@ -1,0 +1,78 @@
+[comment encoding = UTF-8 /]
+[module generateJava('http://www.example.org/diagramaDeClases')]
+
+
+[template public generateEstructura(raiz : Diagrama)]
+[comment @main/]
+[for (i : Clase | raiz.clase_diagrama)]
+	[file ('fuentes/'+i.nombreClase+'.java', false, 'UTF-8')]
+package fuentes;
+
+public class [i.nombreClase/]{
+
+[generarAtributo(i)/] 
+
+	public [i.nombreClase/]() {}
+
+[generarConstructorSobrecargado(i)/]
+
+[generarGet(i)/]
+[generarSet(i)/]
+[generarOperacion(i)/]
+}
+[/file]
+[/for]
+
+[/template]
+
+[template public generarAtributo(clase : Clase)]
+[for (it : Atributo | clase.atributo_contenido)]
+	[it.visibilidadAtributo/] [it.tipoAtributo/] [it.nombreAtributo/];
+[/for]
+[/template]
+
+[template public generarOperacion(clase : Clase)]
+[for (it : Operacion | clase.operacion_contenida)]
+	[it.visibilidadOperacion/] [it.retornoOperacion/] [it.nombreOperacion/](){
+		[if (it.retornoOperacion.toString() = 'boolean')]
+			return true;
+		[/if]
+		[if (it.retornoOperacion.toString() = 'String')]
+			return null;
+		[/if]
+		[if (it.retornoOperacion.toString() = 'int' or it.retornoOperacion.toString() = 'Double')]
+			return 0;
+		[/if]
+};
+[/for]
+[/template]
+
+[template public generarConstructorSobrecargado(clase : Clase)]
+	public [clase.nombreClase/]([fabricarConstructor(clase)/]){
+		[for (it : Atributo | clase.atributo_contenido)]
+		this.[it.nombreAtributo/]= [it.nombreAtributo/];
+		[/for]
+}
+[/template]
+
+[template public fabricarConstructor(clase : Clase)]
+[for (it : Atributo | clase.atributo_contenido) separator (',')]
+[it.tipoAtributo/] [it.nombreAtributo/]
+[/for]
+[/template]
+
+[template public generarGet(clase : Clase)]
+[for (it : Atributo | clase.atributo_contenido)]
+	public [it.tipoAtributo/] get[it.nombreAtributo.toUpperFirst()/](){
+		return [it.nombreAtributo/];
+	}
+[/for]
+[/template]
+
+[template public generarSet(clase : Clase)]
+[for (it : Atributo | clase.atributo_contenido)]
+	public void set[it.nombreAtributo.toUpperFirst()/]([it.tipoAtributo/] [it.nombreAtributo/]){
+		this.[it.nombreAtributo/]= [it.nombreAtributo/];
+	}
+[/for]
+[/template]
