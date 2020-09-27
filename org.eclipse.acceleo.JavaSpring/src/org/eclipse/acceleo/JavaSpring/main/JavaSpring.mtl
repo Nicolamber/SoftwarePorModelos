@@ -1,0 +1,11 @@
+[comment encoding = UTF-8 /]
+[module JavaSpring('http://www.example.org/diagramaClasesCompleto')]
+[import org::eclipse::acceleo::JavaSpring::main::generateMainClass /]
+[import AcceleoJavaSpring::entities::generateEntity /]
+
+
+[template public generateJavaSpring(diagrama : DiagramaClases)]
+[comment @main/]
+[generateMainClass(diagrama) /]
+[generateEntity(diagrama) /]
+[/template]

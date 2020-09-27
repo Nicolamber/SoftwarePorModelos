@@ -1,0 +1,41 @@
+[comment encoding = UTF-8 /]
+[module generateEntity('http://www.example.org/diagramaClasesCompleto')]
+[import AcceleoJavaSpring::properties::generateProperties /]
+
+[template public generateEntity(raiz : DiagramaClases)]
+
+[for (clase : Clase | raiz.packages_contenidos.clasificadores_contenidos)]
+[file ('src/main/java/com/example/demo/entities/'+clase.nombre+'.java', false, 'UTF-8')]
+package com.example.demoAcceleo.entities;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import org.hibernate.envers.Audited;
+
+import javax.persistence.*;
+import java.io.Serializable;
+
+@Entity
+@Table(name="[clase.nombre.toLowerCase() /]")
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Getter
+@Setter
+@Audited
+public class [clase.nombre.toUpperFirst() /] implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+	[generateProperties(clase) /]
+}
+
+
+[/file]
+[/for]
+
+
+[/template]

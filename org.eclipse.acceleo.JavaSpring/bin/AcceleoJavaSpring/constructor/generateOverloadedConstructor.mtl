@@ -1,0 +1,6 @@
+[comment encoding = UTF-8 /]
+[module generateOverloadedConstructor('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateOverloadedConstructor(aDiagramaClases : DiagramaClases)]
+[/template]

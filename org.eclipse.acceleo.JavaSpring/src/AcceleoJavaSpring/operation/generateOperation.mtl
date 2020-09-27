@@ -1,0 +1,7 @@
+[comment encoding = UTF-8 /]
+[module generateOperation('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateOperation(clase : Clase)]
+
+[/template]

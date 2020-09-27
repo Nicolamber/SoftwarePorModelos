@@ -1,0 +1,7 @@
+[comment encoding = UTF-8 /]
+[module relation('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public relation(aDiagramaClases : DiagramaClases)]
+
+[/template]

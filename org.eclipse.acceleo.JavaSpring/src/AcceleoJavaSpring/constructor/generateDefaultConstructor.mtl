@@ -1,0 +1,6 @@
+[comment encoding = UTF-8 /]
+[module generateDefaultConstructor('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateDefaultConstructor(anArtefacto : Artefacto)]
+[/template]

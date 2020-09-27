@@ -1,0 +1,6 @@
+[comment encoding = UTF-8 /]
+[module generateConstructorParams('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateConstructorParams(aDiagramaClases : DiagramaClases)]
+[/template]

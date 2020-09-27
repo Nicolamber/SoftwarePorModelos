@@ -1,0 +1,10 @@
+[comment encoding = UTF-8 /]
+[module generateProperties('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateProperties(clase : Clase)]
+[for (atributo : Atributo | clase.atributos_contenidos)]
+@Column(name="[atributo.nombre.toLowerCase() /]")
+private [atributo.tipo/] [atributo.nombre /];
+[/for]
+[/template]

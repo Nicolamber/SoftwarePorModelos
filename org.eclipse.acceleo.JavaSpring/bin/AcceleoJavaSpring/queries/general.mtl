@@ -1,0 +1,7 @@
+[comment encoding = UTF-8 /]
+[module general('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public general(aDiagramaClases : DiagramaClases)]
+
+[/template]
