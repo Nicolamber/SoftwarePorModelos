@@ -1,0 +1,18 @@
+[comment encoding = UTF-8 /]
+[module generateOverchargedConstructor('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateOverchargedConstructor(clase: Clase)]
+
+	public [clase.nombre/]([fabricarConstructor(clase)/]){
+		[for (it : Atributo | clase.atributos_contenidos)]
+		this.[it.nombre/]= [it.nombre/];
+		[/for]
+}
+[/template]
+
+[template public fabricarConstructor(clase : Clase)]
+[for (it : Atributo | clase.atributos_contenidos) separator (',')]
+[it.tipo/] [it.tipo/]
+[/for]
+[/template]

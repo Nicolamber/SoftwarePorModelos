@@ -1,0 +1,19 @@
+[comment encoding = UTF-8 /]
+[module generateOperations('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateOperations(clase : Clase)]
+[for (it : Operacion | clase.operaciones_contenidas)]
+	[it.visibilidad/] [it.tipoRetorno/] [it.nombre/](){
+		[if (it.tipoRetorno.toString() = 'boolean')]
+			return true;
+		[/if]
+		[if (it.tipoRetorno.toString() = 'String')]
+			return null;
+		[/if]
+		[if (it.tipoRetorno.toString() = 'int' or it.tipoRetorno.toString() = 'Double')]
+			return 0;
+		[/if]
+};
+[/for]
+[/template]

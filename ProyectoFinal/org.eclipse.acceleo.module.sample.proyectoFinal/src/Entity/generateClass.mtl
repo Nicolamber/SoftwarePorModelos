@@ -1,0 +1,33 @@
+[comment encoding = UTF-8 /]
+[module generateClass('http://www.example.org/diagramaClasesCompleto')]
+
+[import attributes::generateAttributes /]
+[import constructors::generateOverchargedConstructor /]
+[import constructors::generateEmptyConstructor /]
+[import getter_and_setter::generateGetter /]
+[import getter_and_setter::generateSetter /]
+[import operations::generateOperations /]
+
+[template public generateClass(p : Package)]
+[for (it : Clase | p.clasificadores_contenidos ->filter(Clase))]
+[file ('fuentes/'+it.nombre+'.java', false, 'UTF-8')]
+package [p.nombre/];
+public class [it.nombre/]{
+
+	[generateAttributes(it)/]
+
+	[generateEmptyConstructor(it)/]
+
+	[generateOverchargedConstructor(it)/]
+
+	[generateGet(it)/]
+
+	[generateSet(it)/]
+
+	[generateOperations(it)/]
+
+}
+[/file]
+
+[/for]
+[/template]

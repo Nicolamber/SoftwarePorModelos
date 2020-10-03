@@ -1,0 +1,9 @@
+[comment encoding = UTF-8 /]
+[module generateAttributes('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateAttributes(clase: Clase)]
+[for (it : Atributo | clase.atributos_contenidos)]
+	[it.visibilidad/] [it.tipo/] [it.nombre/];
+[/for]
+[/template]

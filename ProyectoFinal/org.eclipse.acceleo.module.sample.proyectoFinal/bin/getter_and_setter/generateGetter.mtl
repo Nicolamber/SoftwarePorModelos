@@ -1,0 +1,11 @@
+[comment encoding = UTF-8 /]
+[module generateGetter('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateGet(clase: Clase)]
+[for (it : Atributo | clase.atributos_contenidos)]
+	public [it.tipo/] get[it.nombre.toUpperFirst()/](){
+		return [it.nombre/];
+	}
+[/for]
+[/template]

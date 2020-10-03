@@ -1,0 +1,16 @@
+[comment encoding = UTF-8 /]
+[module generateProyecyoFinal('http://www.example.org/diagramaClasesCompleto')]
+
+[import Entity::generateClass /]
+[import Entity::generateInterface /]
+[template public generateDiagrama(d : DiagramaClases)]
+[comment @main/]
+[for (p : Package | d.packages_contenidos)]
+[comment aca van los metodos mas generales que manejan entidades, repositorios, etc/]
+	
+	[generateClass(p)/]
+
+	[generateInterface(p)/]
+
+[/for]
+[/template]

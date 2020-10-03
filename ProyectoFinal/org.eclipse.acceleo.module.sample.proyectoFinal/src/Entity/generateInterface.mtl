@@ -1,0 +1,28 @@
+[comment encoding = UTF-8 /]
+[module generateInterface('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateInterface(p : Package)]
+	[for (i : Interface | p.clasificadores_contenidos->filter(Interface))]
+		[file ('fuentes/'+i.nombre+'.java', false, 'UTF-8')]
+		package [p.nombre/];
+
+		public Interface [i.nombre/] [createInterfaceAttributes(i)/] [addExtensioToInterface(i)/]{
+		}
+		[/file]
+	[/for]
+[/template]
+
+[template public createInterfaceAttributes(interface : Interface)]
+
+[for (atribute : Atributo | interface.atributos_contenidos)]
+	[atribute.tipo/] [atribute.nombre/];
+[/for]
+
+[/template]
+
+[template public addExtensioToInterface(interface : Interface)]
+[if (interface.herencias_contenidas->size() = 1)]
+	extends [interface.herencias_contenidas.destino/]
+[/if]
+[/template]

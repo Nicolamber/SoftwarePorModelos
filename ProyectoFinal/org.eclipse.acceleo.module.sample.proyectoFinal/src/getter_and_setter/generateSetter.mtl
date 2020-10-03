@@ -1,0 +1,11 @@
+[comment encoding = UTF-8 /]
+[module generateSetter('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateSet(clase : Clase)]
+[for (it : Atributo | clase.atributos_contenidos)]
+	public void set[it.nombre.toUpperFirst()/]([it.tipo/] [it.nombre/]){
+		this.[it.nombre/]= [it.nombre/];
+	}
+[/for]
+[/template]
