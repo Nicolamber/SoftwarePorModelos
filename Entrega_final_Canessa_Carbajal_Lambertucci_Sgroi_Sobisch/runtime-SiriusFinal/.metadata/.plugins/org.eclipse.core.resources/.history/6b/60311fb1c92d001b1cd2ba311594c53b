@@ -109,7 +109,8 @@
             </style>
           </conditionnalStyles>
         </edgeMappings>
-        <edgeMappings name="Heritage" sourceMapping="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class'] //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Interface']" targetMapping="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class'] //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Interface']" targetFinderExpression="[destiny/]" sourceFinderExpression="[origin/]" domainClass="diagramaClasesCompleto::Herencia" useDomainElement="true">
+
+ <edgeMappings name="Heritage" targetFinderExpression="[destino/]" sourceFinderExpression="[origen/]" domainClass="diagramaClasesCompleto::Herencia" useDomainElement="true">
           <style targetArrow="InputClosedArrow" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -117,7 +118,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="Implementation" sourceMapping="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']" targetMapping="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Interface']" targetFinderExpression="[destiny/]" sourceFinderExpression="[origin/]" domainClass="diagramaClasesCompleto::Realizacion" useDomainElement="true">
+        <edgeMappings name="Implementation" domainClass="diagramaClasesCompleto::Realizacion" useDomainElement="true">
           <style lineStyle="dash" targetArrow="InputFillClosedArrow" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -125,7 +126,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="AssociativeClass" sourceMapping="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']" targetMapping="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']" targetFinderExpression="[self.clases_asociativas_contenidas/]">
+        <edgeMappings name="AssociativeClass" >
           <style lineStyle="dash" targetArrow="NoDecoration" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <centerLabelStyleDescription labelSize="12" showIcon="false">
@@ -133,6 +134,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
+        
         <containerMappings name="Package" domainClass="diagramaClasesCompleto::Package">
           <subContainerMappings name="Class" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Clase" childrenPresentation="List">
             <subNodeMappings name="Atribute" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Atributo">
@@ -218,35 +220,7 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>
           </style>
         </containerMappings>
-        <toolSections name="Elements"/>
-        <customization>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="feature:esStatic">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Atribute']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Atribute']/@conditionnalStyles.1/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Atribute']/@conditionnalStyles.2/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.1/@style" attributeName="labelFormat" value="[FontFormat::underline/]"/>
-          </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="feature:esFinal">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Atribute']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Atribute']/@conditionnalStyles.1/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Atribute']/@conditionnalStyles.2/@style" attributeName="labelExpression" value="['final '+nombre+': '+tipo/]"/>
-          </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="feature:esAbstracta">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.1/@style" attributeName="labelFormat" value="[FontFormat::italic/]"/>
-          </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[multiplicidad=Multiplicidad::oneToOne or multiplicidad=Multiplicidad::oneToMany/]">
-            <featureCustomizations xsi:type="description:EAttributeCustomization"
-            appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.0/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.2/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.3/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.1/@style/@beginLabelStyleDescription" attributeName="labelExpression" value="1"/>
-          </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[multiplicidad=Multiplicidad::manyToMany or multiplicidad=Multiplicidad::manyToOne/]">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" 
-              appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.0/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.2/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.3/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.1/@style/@beginLabelStyleDescription" attributeName="labelExpression" value="*"/>
-          </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[multiplicidad=Multiplicidad::oneToOne or multiplicidad=Multiplicidad::manyToOne/]">
-            <featureCustomizations xsi:type="description:EAttributeCustomization"
-              appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.0/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.2/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.3/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.1/@style/@endLabelStyleDescription"
-              attributeName="labelExpression" value="1"/>
-          </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[multiplicidad=Multiplicidad::oneToMany or multiplicidad=Multiplicidad::manyToMany/]">
-            <featureCustomizations xsi:type="description:EAttributeCustomization"
-            appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.0/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.2/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.3/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.1/@style/@endLabelStyleDescription" attributeName="labelExpression" value="*"/>
-          </vsmElementCustomizations>
-        </customization>
+        <toolSections name="Elements" icon="/my.projectFinal.design/iconos/Paquete.gif"/>
       </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="my.projectFinal.design.Services"/>

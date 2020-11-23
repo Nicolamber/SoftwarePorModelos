@@ -2,7 +2,7 @@
 [module generateAssociativeClass('http://www.example.org/diagramaClasesCompleto')]
 [import properties::generateProperty /]
 [import relation::generateImplementation /]
-[import relation::generateRelation /]
+[import relation::generateRelation /] 
 [import relation::generateExtension /]
 
 [template public generateAssociativeClass(r : Relacion, paquete : Package, d: DiagramaClases)]
