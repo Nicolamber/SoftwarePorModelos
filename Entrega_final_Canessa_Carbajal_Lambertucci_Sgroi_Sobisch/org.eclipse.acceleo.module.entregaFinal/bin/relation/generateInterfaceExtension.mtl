@@ -1,0 +1,9 @@
+[comment encoding = UTF-8 /]
+[module generateInterfaceExtension('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generateInterfaceExtension(interface : Interface)]
+[if (interface.herencias_contenidas->size()=1)]
+	extends [interface.herencias_contenidas.destino.nombre/]
+[/if]
+[/template]

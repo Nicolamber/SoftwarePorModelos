@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="projectFinal" version="12.0.0.2017041100">
+  <ownedViewpoints name="VistaProyectoFinal">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="diagramaClasesFinal" domainClass="diagramaClasesCompleto::DiagramaClases" enablePopupBars="true">
+      <defaultLayer name="Capa1">
+        <nodeMappings name="Artifact" domainClass="diagramaClasesCompleto::Artefacto">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW" workspacePath="/my.projectFinal.design/iconos/configuration-gears.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="DockerConfigurator" domainClass="diagramaClasesCompleto::ConfiguracionDocker">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW" workspacePath="/my.projectFinal.design/iconos/docker.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="DatabaseConfigurator" domainClass="diagramaClasesCompleto::ConfiguracionDB">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/my.projectFinal.design/iconos/BD.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+          <borderColor href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </nodeMappings>
+        <nodeMappings name="LanguajeConfigurator" domainClass="diagramaClasesCompleto::ConfiguracionLenguaje">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW" workspacePath="my.projectFinal.design/iconos/coding.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="MicroservicesConfigurator" domainClass="diagramaClasesCompleto::ConfiguracionMicroservicios">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="10" resizeKind="NSEW" workspacePath="/my.projectFinal.design/iconos/discoveryserver.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <containerMappings name="Package" domainClass="diagramaClasesCompleto::Package">
+          <subContainerMappings name="Class" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Clase" childrenPresentation="List">
+            <subNodeMappings name="Atribute" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Atributo">
+              <conditionnalStyles predicateExpression="[self.visibilidad = ModicadoresAcceso::private/]">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="[nombre + ': '+ tipo/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/my.projectFinal.design/iconos/AtributoPrivate.GIF">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="[self.visibilidad = ModicadoresAcceso::protected/]">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="[nombre + ': '+ tipo/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/my.projectFinal.design/iconos/AtributoProtected.GIF">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="[self.visibilidad = ModicadoresAcceso::public/]">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="[nombre + ': '+ tipo/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/my.projectFinal.design/iconos/AtributoPublic.GIF">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+            </subNodeMappings>
+            <subNodeMappings name="Operation" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Operacion">
+              <conditionnalStyles predicateExpression="[self.visibilidad = ModicadoresAcceso::protected/]">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="[nombre+ ('('+parametros_contenidos.nombre.prefix(', ') +'): ').replace(', ','' ) + tipoRetorno/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/my.projectFinal.design/iconos/OperacionProtected.GIF">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="[self.visibilidad = ModicadoresAcceso::public/]">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="[nombre+ ('('+parametros_contenidos.nombre.prefix(', ') + '): ').replace(', ','') + tipoRetorno/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/my.projectFinal.design/iconos/OperacionPublic.GIF">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+            </subNodeMappings>
+          </subContainerMappings>
+        </containerMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="my.projectFinal.design.Services"/>
+  </ownedViewpoints>
+</description:Group>
