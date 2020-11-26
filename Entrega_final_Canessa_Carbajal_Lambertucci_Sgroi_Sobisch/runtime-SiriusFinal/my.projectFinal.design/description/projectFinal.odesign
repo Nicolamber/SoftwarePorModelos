@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="projectFinal" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="projectFinal" version="12.0.0.2017041100">
   <ownedViewpoints name="VistaProyectoFinal">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="diagramaClasesFinal" domainClass="diagramaClasesCompleto::DiagramaClases" enablePopupBars="true">
       <defaultLayer name="Capa1">
@@ -155,7 +155,7 @@
                 </style>
               </conditionnalStyles>
             </subNodeMappings>
-            <subNodeMappings name="Operation" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Operacion">
+            <subNodeMappings name="Operation" semanticCandidatesExpression="feature:eAllContents" doubleClickDescription="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@toolSections.0/@ownedTools[name='Parameters']" domainClass="diagramaClasesCompleto::Operacion">
               <conditionnalStyles predicateExpression="[self.visibilidad = ModicadoresAcceso::protected/]">
                 <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="[nombre+ ('('+parametros_contenidos.nombre.prefix(', ') +'): ').replace(', ','' ) + tipoRetorno/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/my.projectFinal.design/iconos/OperacionProtected.GIF">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -218,7 +218,283 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>
           </style>
         </containerMappings>
-        <toolSections name="Elements"/>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Package" containerMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']" iconPath="/my.projectFinal.design/iconos/Paquete.gif">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Package" referenceName="packages_contenidos">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Package'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Class" containerMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']" iconPath="/my.projectFinal.design/iconos/Clase.gif">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Clase" referenceName="clasificadores_contenidos">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Class'/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Abstract Calss" containerMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']" iconPath="/my.projectFinal.design/iconos/ClaseAbstracta.gif">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Clase" referenceName="clasificadores_contenidos">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Class'/]"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="esAbstracta" valueExpression="true"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Associative Class" edgeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='AssociativeClass']" iconPath="/my.projectFinal.design/iconos/Clase asociativa.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Clase" referenceName="clases_asociativas_contenidasclases">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Associative Class'/]"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="esAsociativa" valueExpression="true"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Interface" containerMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Interface']" iconPath="/my.projectFinal.design/iconos/Interface.gif">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Interface" referenceName="clasificadores_contenidos">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Interface'/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Attribute" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Atribute']" iconPath="/my.projectFinal.design/iconos/Atributo.gif">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Atributo" referenceName="atributos_contenidos">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Attribute'/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Operation" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']" iconPath="/my.projectFinal.design/iconos/Operacion.gif">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Operacion" referenceName="operaciones_contenidas">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Operacion'/]"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="visibilidad" valueExpression="public"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Parameters" mappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Parameters">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Parameters page" labelExpression="Page" domainClass="diagramaClasesCompleto::Operacion" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@toolSections.0/@ownedTools[name='Parameters']/@initialOperation/@firstModelOperations/@groups.0"/>
+                <groups name="Parameters List" labelExpression="Lista de Parametros" domainClass="diagramaClasesCompleto::Operacion" semanticCandidateExpression="var:self">
+                  <controls xsi:type="properties:TextDescription">
+                    <initialOperation>
+                      <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+                    </initialOperation>
+                  </controls>
+                </groups>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <subSections name="Settings">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Database Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='DatabaseConfigurator']" iconPath="/my.projectFinal.design/iconos/BD.png">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionDB" referenceName="configuraciondb"/>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Language settings" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='LanguajeConfigurator']" iconPath="/my.projectFinal.design/iconos/Carpeta.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionLenguaje" referenceName="configuracionlenguaje"/>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Docker Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='DockerConfigurator']" iconPath="/my.projectFinal.design/iconos/docker (1).png">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionDocker" referenceName="configuraciondocker"/>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Artifact Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='Artifact']" iconPath="/my.projectFinal.design/iconos/configuration-gears (1).png">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Artefacto" referenceName="artefacto_contenido"/>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Microservices Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='MicroservicesConfigurator']" iconPath="/my.projectFinal.design/iconos/discoveryserver-icon.png">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionMicroservicios" referenceName="configuracionmicroservicios"/>
+              </initialOperation>
+            </ownedTools>
+          </subSections>
+          <subSections name="Relations">
+            <ownedTools xsi:type="tool:EdgeCreationDescription" name="Unidirectional" edgeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']" iconPath="/my.projectFinal.design/iconos/UniDireccional.gif">
+              <sourceVariable name="source"/>
+              <targetVariable name="target"/>
+              <sourceViewVariable name="sourceView"/>
+              <targetViewVariable name="targetView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Relacion" referenceName="relaciones_contenidas">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="tipo" valueExpression="[TipoRelacion::unidireccional/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="origen" valueExpression="[source/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="destino" valueExpression="[target/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['to'+destino.nombre/]"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:EdgeCreationDescription" name="Aggregation" edgeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']" iconPath="/my.projectFinal.design/iconos/Agregacion.gif">
+              <sourceVariable name="source"/>
+              <targetVariable name="target"/>
+              <sourceViewVariable name="sourceView"/>
+              <targetViewVariable name="targetView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Relacion" referenceName="relaciones_contenidas">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="tipo" valueExpression="[TipoRelacion::agregacion/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="origen" valueExpression="[source/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="destino" valueExpression="[target/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['to'+destino.nombre/]"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:EdgeCreationDescription" name="Composition" edgeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']" iconPath="/my.projectFinal.design/iconos/Composicion.gif">
+              <sourceVariable name="source"/>
+              <targetVariable name="target"/>
+              <sourceViewVariable name="sourceView"/>
+              <targetViewVariable name="targetView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Relacion" referenceName="relaciones_contenidas">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="tipo" valueExpression="[TipoRelacion::composicion/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="origen" valueExpression="[source/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="destino" valueExpression="[target/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['to'+destino.nombre/]"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:EdgeCreationDescription" name="Heritage" edgeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']" iconPath="/my.projectFinal.design/iconos/Herencia.gif">
+              <sourceVariable name="source"/>
+              <targetVariable name="target"/>
+              <sourceViewVariable name="sourceView"/>
+              <targetViewVariable name="targetView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Herencia" referenceName="herencias_contenidas">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="origen" valueExpression="[source/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="destino" valueExpression="[target/]"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:EdgeCreationDescription" name="Realization" edgeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']" iconPath="/my.projectFinal.design/iconos/Realizacion.gif">
+              <sourceVariable name="source"/>
+              <targetVariable name="target"/>
+              <sourceViewVariable name="sourceView"/>
+              <targetViewVariable name="targetView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Realizacion" referenceName="realizaciones_contenidas">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="origen" valueExpression="[source/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="destino" valueExpression="[target/]"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:EdgeCreationDescription" name="Dependency" edgeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']" iconPath="/my.projectFinal.design/iconos/Dependency.png">
+              <sourceVariable name="source"/>
+              <targetVariable name="target"/>
+              <sourceViewVariable name="sourceView"/>
+              <targetViewVariable name="targetView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Relacion" referenceName="relaciones_contenidas">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="tipo" valueExpression="[TipoRelacion::dependenciaUso/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="origen" valueExpression="[source/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="destino" valueExpression="[target/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['dependency'+destino.nombre/]"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:EdgeCreationDescription" name="DependencyCreator" edgeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']" iconPath="/my.projectFinal.design/iconos/Dependency.png">
+              <sourceVariable name="source"/>
+              <targetVariable name="target"/>
+              <sourceViewVariable name="sourceView"/>
+              <targetViewVariable name="targetView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Relacion" referenceName="relaciones_contenidas">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="tipo" valueExpression="[TipoRelacion::dependenciaCreacion/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="origen" valueExpression="[source/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="destino" valueExpression="[target/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['dependency'+destino.nombre/]"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:EdgeCreationDescription" name="Bidirectional" edgeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']" iconPath="/my.projectFinal.design/iconos/BiDireccional.gif">
+              <sourceVariable name="source"/>
+              <targetVariable name="target"/>
+              <sourceViewVariable name="sourceView"/>
+              <targetViewVariable name="targetView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Relacion" referenceName="relaciones_contenidas">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="tipo" valueExpression="[TipoRelacion::bidireccional/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="origen" valueExpression="[source/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="destino" valueExpression="[target/]"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="[destino.nombre+'_'+origen.nombre+Relacion.allInstances()->size()/]"/>
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[target/]">
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Relacion" referenceName="relaciones_contenidas">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="tipo" valueExpression="[TipoRelacion::bidireccional/]"/>
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="destino" valueExpression="[source/]"/>
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="origen" valueExpression="[target/]"/>
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="[origen.nombre+'_'+destino.nombre+(Relacion.allInstances()->size()-1)/]"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:DeleteElementDescription" name="DeleteSecondBidirectional">
+              <element name="element"/>
+              <elementView name="elementView"/>
+              <containerView name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:RemoveElement">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.destino.oclAsType(Clase).relaciones_contenidas->select(tipo=TipoRelacion::bidireccional)->select(b : Relacion | b.nombre = self.nombre)/]">
+                    <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+          </subSections>
+        </toolSections>
         <customization>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="feature:esStatic">
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Atribute']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Atribute']/@conditionnalStyles.1/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Atribute']/@conditionnalStyles.2/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.1/@style" attributeName="labelFormat" value="[FontFormat::underline/]"/>
@@ -230,21 +506,16 @@
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.1/@style" attributeName="labelFormat" value="[FontFormat::italic/]"/>
           </vsmElementCustomizations>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[multiplicidad=Multiplicidad::oneToOne or multiplicidad=Multiplicidad::oneToMany/]">
-            <featureCustomizations xsi:type="description:EAttributeCustomization"
-            appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.0/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.2/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.3/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.1/@style/@beginLabelStyleDescription" attributeName="labelExpression" value="1"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.0/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.2/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.3/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.1/@style/@beginLabelStyleDescription" attributeName="labelExpression" value="1"/>
           </vsmElementCustomizations>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[multiplicidad=Multiplicidad::manyToMany or multiplicidad=Multiplicidad::manyToOne/]">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" 
-              appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.0/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.2/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.3/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.1/@style/@beginLabelStyleDescription" attributeName="labelExpression" value="*"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.0/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.2/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.3/@style/@beginLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.1/@style/@beginLabelStyleDescription" attributeName="labelExpression" value="*"/>
           </vsmElementCustomizations>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[multiplicidad=Multiplicidad::oneToOne or multiplicidad=Multiplicidad::manyToOne/]">
-            <featureCustomizations xsi:type="description:EAttributeCustomization"
-              appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.0/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.2/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.3/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.1/@style/@endLabelStyleDescription"
-              attributeName="labelExpression" value="1"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.0/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.2/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.3/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.1/@style/@endLabelStyleDescription" attributeName="labelExpression" value="1"/>
           </vsmElementCustomizations>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[multiplicidad=Multiplicidad::oneToMany or multiplicidad=Multiplicidad::manyToMany/]">
-            <featureCustomizations xsi:type="description:EAttributeCustomization"
-            appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.0/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.2/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.3/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.1/@style/@endLabelStyleDescription" attributeName="labelExpression" value="*"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.0/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.2/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.3/@style/@endLabelStyleDescription //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']/@conditionnalStyles.1/@style/@endLabelStyleDescription" attributeName="labelExpression" value="*"/>
           </vsmElementCustomizations>
         </customization>
       </defaultLayer>

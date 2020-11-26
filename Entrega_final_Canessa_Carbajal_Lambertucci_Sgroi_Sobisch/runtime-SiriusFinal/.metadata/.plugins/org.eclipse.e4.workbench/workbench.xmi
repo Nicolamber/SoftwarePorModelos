@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_bkng8C2TEeudtZcM_GwbOQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_bkng8S2TEeudtZcM_GwbOQ" bindingContexts="_blcnjC2TEeudtZcM_GwbOQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.sirius.editor.editorPlugin.SiriusEditorID&quot; name=&quot;projectFinal.odesign&quot; tooltip=&quot;my.projectFinal.design/description/projectFinal.odesign&quot;>&#xD;&#xA;&lt;persistable path=&quot;/my.projectFinal.design/description/projectFinal.odesign&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Services.java&quot; tooltip=&quot;my.projectFinal.design/src/my/projectFinal/design/Services.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/my.projectFinal.design/src/my/projectFinal/design/Services.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;new diagramaClasesFinal&quot; tooltip=&quot;platform:/resource/PruebaProyectoFinal/representations.aird/new diagramaClasesFinal&quot;>&#xD;&#xA;&lt;persistable REP_DESC_URI=&quot;platform:/resource/PruebaProyectoFinal/representations.aird#_KFia8C2TEeudtZcM_GwbOQ&quot; SESSION_RESOURCE_URI=&quot;platform:/resource/PruebaProyectoFinal/representations.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; name=&quot;new diagramaClasesFinal&quot; uri=&quot;platform:/resource/PruebaProyectoFinal/representations.aird#_KGA8ES2TEeudtZcM_GwbOQ&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;diagramaClasesCompleto.presentation.DiagramaClasesCompletoEditorID&quot; name=&quot;My.diagramaclasescompleto&quot; tooltip=&quot;PruebaProyectoFinal/My.diagramaclasescompleto&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PruebaProyectoFinal/My.diagramaclasescompleto&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;new diagramaClasesFinal&quot; tooltip=&quot;platform:/resource/ProyectoFinal/representations.aird/new diagramaClasesFinal&quot;>&#xD;&#xA;&lt;persistable REP_DESC_URI=&quot;platform:/resource/ProyectoFinal/representations.aird#_zed84C2REeuUxslFmoJR8A&quot; SESSION_RESOURCE_URI=&quot;platform:/resource/ProyectoFinal/representations.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; name=&quot;new diagramaClasesFinal&quot; uri=&quot;platform:/resource/ProyectoFinal/representations.aird#_zf3rES2REeuUxslFmoJR8A&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;diagramaClasesCompleto.presentation.DiagramaClasesCompletoEditorID&quot; name=&quot;My.diagramaclasescompleto&quot; tooltip=&quot;ProyectoFinal/My.diagramaclasescompleto&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoFinal/My.diagramaclasescompleto&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;new diagramaClasesFinal&quot; tooltip=&quot;platform:/resource/PruebaProyectoFinal/representations.aird/new diagramaClasesFinal&quot;>&#xD;&#xA;&lt;persistable REP_DESC_URI=&quot;platform:/resource/PruebaProyectoFinal/representations.aird#_sHKZgDBBEeuY2YJg8Q_IHw&quot; SESSION_RESOURCE_URI=&quot;platform:/resource/PruebaProyectoFinal/representations.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; name=&quot;new diagramaClasesFinal&quot; uri=&quot;platform:/resource/PruebaProyectoFinal/representations.aird#_sHtMETBBEeuY2YJg8Q_IHw&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;diagramaClasesCompleto.presentation.DiagramaClasesCompletoEditorID&quot; name=&quot;My.diagramaclasescompleto&quot; tooltip=&quot;PruebaProyectoFinal/My.diagramaclasescompleto&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PruebaProyectoFinal/My.diagramaclasescompleto&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.sirius.editor.editorPlugin.SiriusEditorID&quot; name=&quot;projectFinal.odesign&quot; tooltip=&quot;my.projectFinal.design/description/projectFinal.odesign&quot;>&#xD;&#xA;&lt;persistable path=&quot;/my.projectFinal.design/description/projectFinal.odesign&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Services.java&quot; tooltip=&quot;my.projectFinal.design/src/my/projectFinal/design/Services.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/my.projectFinal.design/src/my/projectFinal/design/Services.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;new diagramaClasesFinal&quot; tooltip=&quot;platform:/resource/ProyectoFinal/representations.aird/new diagramaClasesFinal&quot;>&#xD;&#xA;&lt;persistable REP_DESC_URI=&quot;platform:/resource/ProyectoFinal/representations.aird#_zed84C2REeuUxslFmoJR8A&quot; SESSION_RESOURCE_URI=&quot;platform:/resource/ProyectoFinal/representations.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; name=&quot;new diagramaClasesFinal&quot; uri=&quot;platform:/resource/ProyectoFinal/representations.aird#_zf3rES2REeuUxslFmoJR8A&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;diagramaClasesCompleto.presentation.DiagramaClasesCompletoEditorID&quot; name=&quot;My.diagramaclasescompleto&quot; tooltip=&quot;ProyectoFinal/My.diagramaclasescompleto&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoFinal/My.diagramaclasescompleto&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_bkng8S2TEeudtZcM_GwbOQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_bkng8i2TEeudtZcM_GwbOQ" label="%trimmedwindow.label.eclipseSDK" x="953" y="0" width="974" height="1057">
@@ -11,6 +11,7 @@
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
     <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1606136773478"/>
     <tags>topLevel</tags>
+    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_bkng8i2TEeudtZcM_GwbOQ" selectedElement="_bkng8y2TEeudtZcM_GwbOQ" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_bkng8y2TEeudtZcM_GwbOQ" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_bkng9C2TEeudtZcM_GwbOQ">
         <children xsi:type="advanced:Perspective" xmi:id="_bkng9C2TEeudtZcM_GwbOQ" elementId="org.eclipse.ui.resourcePerspective" selectedElement="_bkng9S2TEeudtZcM_GwbOQ" label="Resource" iconURI="platform:/plugin/org.eclipse.ui.ide.application/$nl$/icons/full/eview16/resource_persp.png">
@@ -50,9 +51,10 @@
           <tags>persp.showIn:org.eclipse.egit.ui.RepositoriesView</tags>
           <tags>persp.viewSC:org.eclipse.ant.ui.views.AntView</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_bkng9S2TEeudtZcM_GwbOQ" selectedElement="_bknhAS2TEeudtZcM_GwbOQ" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_bkng9i2TEeudtZcM_GwbOQ" containerData="1000" selectedElement="_bkng9y2TEeudtZcM_GwbOQ">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_bkng9i2TEeudtZcM_GwbOQ" containerData="2401" selectedElement="_bkng9y2TEeudtZcM_GwbOQ">
               <children xsi:type="basic:PartStack" xmi:id="_bkng9y2TEeudtZcM_GwbOQ" elementId="topLeft" containerData="5000" selectedElement="_bkng-C2TEeudtZcM_GwbOQ">
                 <tags>org.eclipse.e4.primaryNavigationStack</tags>
+                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_bkng-C2TEeudtZcM_GwbOQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_bkoJAy2TEeudtZcM_GwbOQ" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -90,7 +92,7 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_bknhAS2TEeudtZcM_GwbOQ" containerData="9000" selectedElement="_bknhAi2TEeudtZcM_GwbOQ">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_bknhAS2TEeudtZcM_GwbOQ" containerData="7599" selectedElement="_bknhAi2TEeudtZcM_GwbOQ">
               <children xsi:type="basic:PartSashContainer" xmi:id="_bknhAi2TEeudtZcM_GwbOQ" containerData="6600" selectedElement="_bknhBS2TEeudtZcM_GwbOQ" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_bknhAy2TEeudtZcM_GwbOQ" elementId="org.eclipse.gef.ui.palette_viewMStack" toBeRendered="false" containerData="1600">
                   <children xsi:type="advanced:Placeholder" xmi:id="_bknhBC2TEeudtZcM_GwbOQ" elementId="org.eclipse.gef.ui.palette_view" toBeRendered="false" ref="_bkoJdi2TEeudtZcM_GwbOQ" closeable="true">
@@ -155,7 +157,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_bkoI4S2TEeudtZcM_GwbOQ" elementId="org.eclipse.ui.editorss" selectedElement="_bkoI4i2TEeudtZcM_GwbOQ">
-      <children xsi:type="basic:PartStack" xmi:id="_bkoI4i2TEeudtZcM_GwbOQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_FyUx8C2WEeuZErq3H9Lbog">
+      <children xsi:type="basic:PartStack" xmi:id="_bkoI4i2TEeudtZcM_GwbOQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_sIYhgDBBEeuY2YJg8Q_IHw">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
@@ -164,6 +166,18 @@
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.sirius.editor.editorPlugin.SiriusEditorID</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_en8bUDBBEeuY2YJg8Q_IHw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="My.diagramaclasescompleto" iconURI="platform:/plugin/DiagramaClasesCompleto.editor/icons/full/obj16/DiagramaClasesCompletoModelFile.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;diagramaClasesCompleto.presentation.DiagramaClasesCompletoEditorID&quot; name=&quot;My.diagramaclasescompleto&quot; partName=&quot;My.diagramaclasescompleto&quot; title=&quot;My.diagramaclasescompleto&quot; tooltip=&quot;PruebaProyectoFinal/My.diagramaclasescompleto&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/PruebaProyectoFinal/My.diagramaclasescompleto&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>diagramaClasesCompleto.presentation.DiagramaClasesCompletoEditorID</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_sIYhgDBBEeuY2YJg8Q_IHw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="new diagramaClasesFinal" iconURI="platform:/plugin/org.eclipse.sirius.diagram.ui/icons/DDiagram.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;new diagramaClasesFinal&quot; partName=&quot;new diagramaClasesFinal&quot; title=&quot;new diagramaClasesFinal&quot; tooltip=&quot;platform:/resource/PruebaProyectoFinal/representations.aird/new diagramaClasesFinal&quot;>&#xD;&#xA;&lt;input REP_DESC_URI=&quot;platform:/resource/PruebaProyectoFinal/representations.aird#_sHKZgDBBEeuY2YJg8Q_IHw&quot; SESSION_RESOURCE_URI=&quot;platform:/resource/PruebaProyectoFinal/representations.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; name=&quot;new diagramaClasesFinal&quot; uri=&quot;platform:/resource/PruebaProyectoFinal/representations.aird#_sHtMETBBEeuY2YJg8Q_IHw&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
         </children>
@@ -266,7 +280,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_bkoJii2TEeudtZcM_GwbOQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ClUwAC3OEeuIiPPtpcRNsQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_bledRS2TEeudtZcM_GwbOQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_XFO_MDA-EeuY2YJg8Q_IHw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_bledRS2TEeudtZcM_GwbOQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_bkoJly2TEeudtZcM_GwbOQ" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -294,7 +308,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_bkoJwy2TEeudtZcM_GwbOQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ClXMQC3OEeuIiPPtpcRNsQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_blec7i2TEeudtZcM_GwbOQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_XFRbcjA-EeuY2YJg8Q_IHw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_blec7i2TEeudtZcM_GwbOQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_bkoJ4C2TEeudtZcM_GwbOQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

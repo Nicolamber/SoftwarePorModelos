@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_MnZnADBBEeuY2YJg8Q_IHw" selectedViews="_iN4AMDBBEeuY2YJg8Q_IHw" version="14.3.1.202003261200">
+    <semanticResources>My.diagramaclasescompleto</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_iN4AMDBBEeuY2YJg8Q_IHw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_sHKZgDBBEeuY2YJg8Q_IHw" name="new diagramaClasesFinal" repPath="#_sGd18DBBEeuY2YJg8Q_IHw" changeId="918dcd7d-ee66-40ca-9f82-4513eddfaaeb">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']"/>
+        <target xmi:type="diagramaClasesCompleto:DiagramaClases" href="My.diagramaclasescompleto#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_sGd18DBBEeuY2YJg8Q_IHw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_sHE58DBBEeuY2YJg8Q_IHw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_sHE58TBBEeuY2YJg8Q_IHw">
+        <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_xQGpQDBBEeuY2YJg8Q_IHw" sizeComputationExpression="2">
+          <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <beginLabelStyleDescription xmi:type="style:BeginLabelStyleDescription" xmi:id="_xQGpQTBBEeuY2YJg8Q_IHw" labelSize="12" showIcon="false" labelExpression="1">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </beginLabelStyleDescription>
+          <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_xQGpQjBBEeuY2YJg8Q_IHw" labelSize="12" showIcon="false" labelExpression="[nombre/]">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </centerLabelStyleDescription>
+          <endLabelStyleDescription xmi:type="style:EndLabelStyleDescription" xmi:id="_xQGpQzBBEeuY2YJg8Q_IHw" labelSize="12" showIcon="false" labelExpression="1">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </endLabelStyleDescription>
+        </computedStyleDescriptions>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_sHtMEDBBEeuY2YJg8Q_IHw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_sHtMETBBEeuY2YJg8Q_IHw" type="Sirius" element="_sGd18DBBEeuY2YJg8Q_IHw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_uK4kwDBBEeuY2YJg8Q_IHw" type="2002" element="_uKb40DBBEeuY2YJg8Q_IHw">
+          <children xmi:type="notation:Node" xmi:id="_uK8PIDBBEeuY2YJg8Q_IHw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_uK-EUDBBEeuY2YJg8Q_IHw" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_utQ5EDBBEeuY2YJg8Q_IHw" type="3009" element="_usmxwDBBEeuY2YJg8Q_IHw">
+              <children xmi:type="notation:Node" xmi:id="_utRgIDBBEeuY2YJg8Q_IHw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_utSHMDBBEeuY2YJg8Q_IHw" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_utSHMTBBEeuY2YJg8Q_IHw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_utSHMjBBEeuY2YJg8Q_IHw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_utQ5ETBBEeuY2YJg8Q_IHw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_utQ5EjBBEeuY2YJg8Q_IHw" x="360" y="104" width="200" height="200"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_wOfbQDBBEeuY2YJg8Q_IHw" type="3009" element="_wOYGgDBBEeuY2YJg8Q_IHw">
+              <children xmi:type="notation:Node" xmi:id="_wOfbQzBBEeuY2YJg8Q_IHw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_wOgCUDBBEeuY2YJg8Q_IHw" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_wOgCUTBBEeuY2YJg8Q_IHw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_wOgCUjBBEeuY2YJg8Q_IHw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_wOfbQTBBEeuY2YJg8Q_IHw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wOfbQjBBEeuY2YJg8Q_IHw" x="50" y="104" width="200" height="200"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_uK-EUTBBEeuY2YJg8Q_IHw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_uK-EUjBBEeuY2YJg8Q_IHw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_uK4kwTBBEeuY2YJg8Q_IHw" fontName="Segoe UI" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uK4kwjBBEeuY2YJg8Q_IHw" x="265" y="135" width="700" height="800"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_sHtMEjBBEeuY2YJg8Q_IHw"/>
+        <edges xmi:type="notation:Edge" xmi:id="_xQzz4DBBEeuY2YJg8Q_IHw" type="4001" element="_xPtnsDBBEeuY2YJg8Q_IHw" source="_utQ5EDBBEeuY2YJg8Q_IHw" target="_wOfbQDBBEeuY2YJg8Q_IHw">
+          <children xmi:type="notation:Node" xmi:id="_xQ0a8DBBEeuY2YJg8Q_IHw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xQ0a8TBBEeuY2YJg8Q_IHw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_xQ1CADBBEeuY2YJg8Q_IHw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xQ1CATBBEeuY2YJg8Q_IHw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_xQ1pEDBBEeuY2YJg8Q_IHw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xQ1pETBBEeuY2YJg8Q_IHw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_xQzz4TBBEeuY2YJg8Q_IHw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_xQzz4jBBEeuY2YJg8Q_IHw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xQzz4zBBEeuY2YJg8Q_IHw" points="[0, 0, 112, 16]$[-112, -16, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xQ5TcDBBEeuY2YJg8Q_IHw" id="(0.0,0.5808080808080808)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xQ5TcTBBEeuY2YJg8Q_IHw" id="(1.0,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_uKb40DBBEeuY2YJg8Q_IHw" name="Package" width="70" height="80">
+      <target xmi:type="diagramaClasesCompleto:Package" href="My.diagramaclasescompleto#//@packages_contenidos.0"/>
+      <semanticElements xmi:type="diagramaClasesCompleto:Package" href="My.diagramaclasescompleto#//@packages_contenidos.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_uKpUMDBBEeuY2YJg8Q_IHw" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundColor="238,201,142" foregroundColor="238,201,142">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_usmxwDBBEeuY2YJg8Q_IHw" name="Class" outgoingEdges="_xPtnsDBBEeuY2YJg8Q_IHw" width="20" height="20">
+        <target xmi:type="diagramaClasesCompleto:Clase" href="My.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+        <semanticElements xmi:type="diagramaClasesCompleto:Clase" href="My.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_utEr0DBBEeuY2YJg8Q_IHw" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="194,239,255" foregroundColor="194,239,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_wOYGgDBBEeuY2YJg8Q_IHw" name="Class" incomingEdges="_xPtnsDBBEeuY2YJg8Q_IHw" width="20" height="20">
+        <target xmi:type="diagramaClasesCompleto:Clase" href="My.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1"/>
+        <semanticElements xmi:type="diagramaClasesCompleto:Clase" href="My.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_wOYtkDBBEeuY2YJg8Q_IHw" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="194,239,255" foregroundColor="194,239,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_xPtnsDBBEeuY2YJg8Q_IHw" name="toClass" sourceNode="_usmxwDBBEeuY2YJg8Q_IHw" targetNode="_wOYGgDBBEeuY2YJg8Q_IHw" beginLabel="1" endLabel="1">
+      <target xmi:type="diagramaClasesCompleto:Relacion" href="My.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@relaciones_contenidas.0"/>
+      <semanticElements xmi:type="diagramaClasesCompleto:Relacion" href="My.diagramaclasescompleto#//@packages_contenidos.0/@clasificadores_contenidos.0/@relaciones_contenidas.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_xQIecDBBEeuY2YJg8Q_IHw" description="_xQGpQDBBEeuY2YJg8Q_IHw" size="2" strokeColor="0,0,0">
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_xQJFgDBBEeuY2YJg8Q_IHw" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_xQJskDBBEeuY2YJg8Q_IHw" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_xQJFgTBBEeuY2YJg8Q_IHw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_sGo1EDBBEeuY2YJg8Q_IHw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer"/>
+    <target xmi:type="diagramaClasesCompleto:DiagramaClases" href="My.diagramaclasescompleto#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
