@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description">
+  <viewpoint:DAnalysis uid="_MnZnADBBEeuY2YJg8Q_IHw" selectedViews="_iN4AMDBBEeuY2YJg8Q_IHw" version="14.3.1.202003261200">
+    <semanticResources>My.diagramaclasescompleto</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_iN4AMDBBEeuY2YJg8Q_IHw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_sHKZgDBBEeuY2YJg8Q_IHw" name="new diagramaClasesFinal" repPath="#_sGd18DBBEeuY2YJg8Q_IHw" changeId="2f280d2e-1255-4fc4-b7f2-ba076ff8f121">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']"/>
+        <target xmi:type="diagramaClasesCompleto:DiagramaClases" href="My.diagramaclasescompleto#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_sGd18DBBEeuY2YJg8Q_IHw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_sHE58DBBEeuY2YJg8Q_IHw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_sHE58TBBEeuY2YJg8Q_IHw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_sHtMEDBBEeuY2YJg8Q_IHw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_sHtMETBBEeuY2YJg8Q_IHw" type="Sirius" element="_sGd18DBBEeuY2YJg8Q_IHw" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_sHtMEjBBEeuY2YJg8Q_IHw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_sGo1EDBBEeuY2YJg8Q_IHw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer"/>
+    <target xmi:type="diagramaClasesCompleto:DiagramaClases" href="My.diagramaclasescompleto#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

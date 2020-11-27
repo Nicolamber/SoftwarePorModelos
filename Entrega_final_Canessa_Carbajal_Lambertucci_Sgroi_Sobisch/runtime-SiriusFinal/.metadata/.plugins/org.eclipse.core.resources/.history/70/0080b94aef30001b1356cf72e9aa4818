@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagramaClasesCompleto:DiagramaClases xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto">
+  <packages_contenidos nombre="Package">
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Class">
+      <herencias_contenidas origen="//@packages_contenidos.0/@clasificadores_contenidos.0" destino="//@packages_contenidos.0/@clasificadores_contenidos.1"/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Class">
+      <herencias_contenidas origen="//@packages_contenidos.0/@clasificadores_contenidos.1" destino="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+      <herencias_contenidas origen="//@packages_contenidos.0/@clasificadores_contenidos.1" destino="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+      <herencias_contenidas/>
+      <herencias_contenidas/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Class" esAbstracta="true">
+      <herencias_contenidas/>
+    </clasificadores_contenidos>
+  </packages_contenidos>
+</diagramaClasesCompleto:DiagramaClases>

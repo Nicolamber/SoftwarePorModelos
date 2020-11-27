@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="projectFinal" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:properties-ext-widgets-reference="http://www.eclipse.org/sirius/properties/1.0.0/ext/widgets/reference" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="projectFinal" version="12.0.0.2017041100">
   <ownedViewpoints name="VistaProyectoFinal">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="diagramaClasesFinal" domainClass="diagramaClasesCompleto::DiagramaClases" enablePopupBars="true">
       <defaultLayer name="Capa1">
@@ -30,7 +30,7 @@
           </style>
         </nodeMappings>
         <nodeMappings name="MicroservicesConfigurator" domainClass="diagramaClasesCompleto::ConfiguracionMicroservicios">
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="10" resizeKind="NSEW" workspacePath="/my.projectFinal.design/iconos/discoveryserver.png">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" sizeComputationExpression="10" resizeKind="NSEW" workspacePath="/my.projectFinal.design/iconos/microservicio.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
@@ -208,7 +208,7 @@
             </conditionnalStyles>
           </subContainerMappings>
           <subContainerMappings name="Interface" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Interface" reusedNodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute%20'] //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']" childrenPresentation="List">
-            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="15" arcHeight="15" borderSizeComputationExpression="1" labelSize="12" labelExpression="['&amp;lt;&amp;lt;I>>\n'+nombre/]">
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="15" arcHeight="15" borderSizeComputationExpression="1" labelSize="12" labelExpression="['&lt;&lt;Interface>>\n'+nombre/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
@@ -280,7 +280,7 @@
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Atributo" referenceName="atributos_contenidos">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Atributo' + Atributo.allInstances()->size()/]"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Atributo' /]"/>
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="visibilidad" valueExpression="[ModicadoresAcceso::private/]"/>
               </firstModelOperations>
             </initialOperation>
@@ -306,12 +306,80 @@
                 <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
                   <initialOperation/>
                 </buttons>
-                <page name="Parameters page" labelExpression="Page" domainClass="diagramaClasesCompleto::Operacion" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@toolSections.0/@ownedTools[name='Parameters']/@initialOperation/@firstModelOperations/@groups.0"/>
-                <groups name="Parameters List" labelExpression="Lista de Parametros" domainClass="diagramaClasesCompleto::Operacion" semanticCandidateExpression="var:self">
-                  <controls xsi:type="properties:TextDescription">
-                    <initialOperation>
-                      <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
-                    </initialOperation>
+                <page name="Parameters dialog" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@toolSections.0/@ownedTools[name='Parameters']/@initialOperation/@firstModelOperations/@groups.0"/>
+                <groups name="list of parameters" labelExpression="Lista de Parametros" domainClass="diagramaClasesCompleto::Operacion" semanticCandidateExpression="var:self">
+                  <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Collection of parameters" labelExpression="Parametros" referenceNameExpression="parametros_contenidos">
+                    <onClickOperation>
+                      <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:selection->at(1)">
+                        <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:onClickEventKind='DOUBLE_CLICK'">
+                          <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Attribute parameter">
+                            <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                              <initialOperation/>
+                            </buttons>
+                            <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                              <initialOperation/>
+                            </buttons>
+                            <page name="parameter dialog" labelExpression="HaciaParametros" domainClass="diagramaClasesCompleto::Atributo" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@toolSections.0/@ownedTools[name='Parameters']/@initialOperation/@firstModelOperations/@groups.0/@controls.0/@onClickOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
+                            <groups name="Attribute parameter window" labelExpression="AtributosParametro" domainClass="diagramaClasesCompleto::Atributo" semanticCandidateExpression="var:self">
+                              <controls xsi:type="properties:TextDescription" name="Attribute parameter name" labelExpression="Nombre" valueExpression="aql: self.nombre">
+                                <initialOperation>
+                                  <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                                    <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="var:newValue"/>
+                                    <subModelOperations xsi:type="tool_1:SetValue" featureName="tipo" valueExpression="aql:diagramaClasesCompleto::TipoDato::float"/>
+                                  </firstModelOperations>
+                                </initialOperation>
+                              </controls>
+                            </groups>
+                          </subModelOperations>
+                          <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Operation parameter">
+                            <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                              <initialOperation/>
+                            </buttons>
+                            <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                              <initialOperation/>
+                            </buttons>
+                            <page name="Operation parameter dialog" labelExpression="HaciaParametros" domainClass="diagramaClasesCompleto::Operacion" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@toolSections.0/@ownedTools[name='Parameters']/@initialOperation/@firstModelOperations/@groups.0/@controls.0/@onClickOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.1/@groups.0 //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@toolSections.0/@ownedTools[name='Parameters']/@initialOperation/@firstModelOperations/@groups.0/@controls.0/@onClickOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.1/@groups.1"/>
+                            <groups name="Operation parameter window" labelExpression="OperacionesParametro" domainClass="diagramaClasesCompleto::Operacion" semanticCandidateExpression="var:self">
+                              <controls xsi:type="properties:TextDescription" name="Operation parameter name" labelExpression="Nombre" valueExpression="aql: self.nombre">
+                                <initialOperation>
+                                  <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                                    <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="var:newValue"/>
+                                  </firstModelOperations>
+                                </initialOperation>
+                              </controls>
+                            </groups>
+                            <groups name="Internal parameters" labelExpression="ParametrosInternos" domainClass="diagramaClasesCompleto::Operacion" semanticCandidateExpression="var:self">
+                              <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="internalParam" labelExpression="aql:'Parametros Internos'" referenceNameExpression="parametros_internos">
+                                <onClickOperation>
+                                  <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:selection->at(1)">
+                                    <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:onClickEventKind='DOUBLE_CLICK'">
+                                      <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Internal parameters for operations">
+                                        <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                                          <initialOperation/>
+                                        </buttons>
+                                        <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                                          <initialOperation/>
+                                        </buttons>
+                                        <page name="Internal parameters page" labelExpression="aql:'Modificar Parametro Interno'" domainClass="diagramaClasesCompleto::ParametroInterno" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@toolSections.0/@ownedTools[name='Parameters']/@initialOperation/@firstModelOperations/@groups.0/@controls.0/@onClickOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.1/@groups.1/@controls.0/@onClickOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
+                                        <groups name="Internal parameters Group" labelExpression="aql:'Parametro Interno'" domainClass="diagramaClasesCompleto::ParametroInterno" semanticCandidateExpression="var:self">
+                                          <controls xsi:type="properties:SelectDescription" name="Internal parameter type" labelExpression="aql:'Tipo'" valueExpression="aql:diagramaClasesCompleto::TipoRetorno.getEEnumLiteral(self.tipoRetorno.toString())" candidatesExpression="aql:diagramaClasesCompleto::TipoRetorno.eLiterals" candidateDisplayExpression="aql:candidate.name">
+                                            <initialOperation>
+                                              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                                                <subModelOperations xsi:type="tool_1:SetValue" featureName="tipoRetorno" valueExpression="aql:newValue.instance"/>
+                                              </firstModelOperations>
+                                            </initialOperation>
+                                          </controls>
+                                        </groups>
+                                      </subModelOperations>
+                                    </subModelOperations>
+                                  </firstModelOperations>
+                                </onClickOperation>
+                              </controls>
+                            </groups>
+                          </subModelOperations>
+                        </subModelOperations>
+                      </firstModelOperations>
+                    </onClickOperation>
                   </controls>
                 </groups>
               </firstModelOperations>
@@ -414,17 +482,14 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
-            <ownedTools xsi:type="tool:EdgeCreationDescription" name="Heritage" edgeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']" iconPath="/my.projectFinal.design/iconos/Herencia.gif">
+            <ownedTools xsi:type="tool:EdgeCreationDescription" name="Heritage" edgeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Heritage']" iconPath="/my.projectFinal.design/iconos/Herencia.gif">
               <sourceVariable name="source"/>
               <targetVariable name="target"/>
               <sourceViewVariable name="sourceView"/>
               <targetViewVariable name="targetView"/>
               <initialOperation>
                 <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
-                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Herencia" referenceName="herencias_contenidas">
-                    <subModelOperations xsi:type="tool_1:SetValue" featureName="origen" valueExpression="[source/]"/>
-                    <subModelOperations xsi:type="tool_1:SetValue" featureName="destino" valueExpression="[target/]"/>
-                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Herencia" referenceName="herencias_contenidas"/>
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
@@ -435,7 +500,7 @@
               <targetViewVariable name="targetView"/>
               <initialOperation>
                 <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
-                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Realizacion" referenceName="realizaciones_contenidas">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Relacion" referenceName="realizaciones_contenidas">
                     <subModelOperations xsi:type="tool_1:SetValue" featureName="origen" valueExpression="[source/]"/>
                     <subModelOperations xsi:type="tool_1:SetValue" featureName="destino" valueExpression="[target/]"/>
                   </subModelOperations>

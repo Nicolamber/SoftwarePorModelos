@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagramaClasesCompleto:DiagramaClases xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto">
+  <packages_contenidos nombre="Package">
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Class">
+      <herencias_contenidas origen="//@packages_contenidos.0/@clasificadores_contenidos.0" destino="//@packages_contenidos.0/@clasificadores_contenidos.2"/>
+      <herencias_contenidas origen="//@packages_contenidos.0/@clasificadores_contenidos.0" destino="//@packages_contenidos.0/@clasificadores_contenidos.2"/>
+      <herencias_contenidas origen="//@packages_contenidos.0/@clasificadores_contenidos.0" destino="//@packages_contenidos.0/@clasificadores_contenidos.3"/>
+      <herencias_contenidas origen="//@packages_contenidos.0/@clasificadores_contenidos.0" destino="//@packages_contenidos.0/@clasificadores_contenidos.3"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.1" nombre="Interface_Class1" tipo="bidireccional" origen="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.3" nombre="Class_Class2" tipo="bidireccional" origen="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Interface"/>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Class" esAbstracta="true">
+      <herencias_contenidas origen="//@packages_contenidos.0/@clasificadores_contenidos.2" destino="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Class">
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.0" nombre="Class_Class2" tipo="bidireccional" origen="//@packages_contenidos.0/@clasificadores_contenidos.3"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.2" nombre="dependencyClass" tipo="dependenciaCreacion" origen="//@packages_contenidos.0/@clasificadores_contenidos.3"/>
+      <relaciones_contenidas destino="//@packages_contenidos.0/@clasificadores_contenidos.1" nombre="dependency" tipo="dependenciaUso" origen="//@packages_contenidos.0/@clasificadores_contenidos.3"/>
+    </clasificadores_contenidos>
+  </packages_contenidos>
+  <artefacto_contenido nombre="Artifact name: " version="Artifact version: "/>
+  <configuraciondocker nombreContenedor="Container name: " tipoReinicio="nunca" nombreImagen=""/>
+  <configuracionmicroservicios/>
+</diagramaClasesCompleto:DiagramaClases>
