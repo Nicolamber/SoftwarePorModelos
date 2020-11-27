@@ -135,7 +135,7 @@
         </edgeMappings>
         <containerMappings name="Package" domainClass="diagramaClasesCompleto::Package">
           <subContainerMappings name="Class" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Clase" childrenPresentation="List">
-            <subNodeMappings name="Attribute " semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Atributo">
+            <subNodeMappings name="Attribute" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Atributo">
               <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="[nombre/]" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -207,7 +207,7 @@
               </style>
             </conditionnalStyles>
           </subContainerMappings>
-          <subContainerMappings name="Interface" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Interface" reusedNodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute%20'] //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']" childrenPresentation="List">
+          <subContainerMappings name="Interface" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Interface" reusedNodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute'] //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']" childrenPresentation="List">
             <style xsi:type="style:FlatContainerStyleDescription" arcWidth="15" arcHeight="15" borderSizeComputationExpression="1" labelSize="12" labelExpression="['&amp;lt;&amp;lt;I>>\n'+nombre/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -275,13 +275,12 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="Attribute" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute%20']" iconPath="/my.projectFinal.design/iconos/Atributo.gif">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Attribute" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute']" iconPath="/my.projectFinal.design/iconos/Atributo.gif">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Atributo" referenceName="atributos_contenidos">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Atributo' + Atributo.allInstances()->size()/]"/>
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="visibilidad" valueExpression="[ModicadoresAcceso::private/]"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Attribute'/]"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -322,39 +321,28 @@
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
-                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionDB" referenceName="configuraciondb">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="dbNombre" valueExpression="['Database'/]"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="tipoProveedor" valueExpression="['Database provider: '/]"/>
-                </firstModelOperations>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionDB" referenceName="configuraciondb"/>
               </initialOperation>
             </ownedTools>
             <ownedTools xsi:type="tool:NodeCreationDescription" name="Language settings" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='LanguajeConfigurator']" iconPath="/my.projectFinal.design/iconos/Carpeta.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
-                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionLenguaje" referenceName="configuracionlenguaje">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="lenguaje" valueExpression="['Languaje: '/]"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="version" valueExpression="['Version: '/]"/>
-                </firstModelOperations>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionLenguaje" referenceName="configuracionlenguaje"/>
               </initialOperation>
             </ownedTools>
             <ownedTools xsi:type="tool:NodeCreationDescription" name="Docker Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='DockerConfigurator']" iconPath="/my.projectFinal.design/iconos/docker (1).png">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
-                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionDocker" referenceName="configuraciondocker">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="nombreContenedor" valueExpression="['Container name: '/]"/>
-                </firstModelOperations>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionDocker" referenceName="configuraciondocker"/>
               </initialOperation>
             </ownedTools>
             <ownedTools xsi:type="tool:NodeCreationDescription" name="Artifact Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='Artifact']" iconPath="/my.projectFinal.design/iconos/configuration-gears (1).png">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
-                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Artefacto" referenceName="artefacto_contenido">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Artifact name: '/]"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="version" valueExpression="['Artifact version: '/]"/>
-                </firstModelOperations>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Artefacto" referenceName="artefacto_contenido"/>
               </initialOperation>
             </ownedTools>
             <ownedTools xsi:type="tool:NodeCreationDescription" name="Microservices Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='MicroservicesConfigurator']" iconPath="/my.projectFinal.design/iconos/discoveryserver-icon.png">
@@ -514,10 +502,10 @@
         </toolSections>
         <customization>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="feature:esStatic">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute%20']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute%20']/@conditionnalStyles.1/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute%20']/@conditionnalStyles.2/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.1/@style" attributeName="labelFormat" value="[FontFormat::underline/]"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute']/@conditionnalStyles.1/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute']/@conditionnalStyles.2/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.1/@style" attributeName="labelFormat" value="[FontFormat::underline/]"/>
           </vsmElementCustomizations>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="feature:esFinal">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute%20']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute%20']/@conditionnalStyles.1/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute%20']/@conditionnalStyles.2/@style" attributeName="labelExpression" value="['final '+nombre+': '+tipo/]"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute']/@conditionnalStyles.1/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Attribute']/@conditionnalStyles.2/@style" attributeName="labelExpression" value="['final '+nombre+': '+tipo/]"/>
           </vsmElementCustomizations>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="feature:esAbstracta">
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.0/@style //@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@subNodeMappings[name='Operation']/@conditionnalStyles.1/@style" attributeName="labelFormat" value="[FontFormat::italic/]"/>

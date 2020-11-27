@@ -342,19 +342,14 @@
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
-                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionDocker" referenceName="configuraciondocker">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="nombreContenedor" valueExpression="['Container name: '/]"/>
-                </firstModelOperations>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionDocker" referenceName="configuraciondocker"/>
               </initialOperation>
             </ownedTools>
             <ownedTools xsi:type="tool:NodeCreationDescription" name="Artifact Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='Artifact']" iconPath="/my.projectFinal.design/iconos/configuration-gears (1).png">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
-                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Artefacto" referenceName="artefacto_contenido">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Artifact name: '/]"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="version" valueExpression="['Artifact version: '/]"/>
-                </firstModelOperations>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Artefacto" referenceName="artefacto_contenido"/>
               </initialOperation>
             </ownedTools>
             <ownedTools xsi:type="tool:NodeCreationDescription" name="Microservices Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='MicroservicesConfigurator']" iconPath="/my.projectFinal.design/iconos/discoveryserver-icon.png">

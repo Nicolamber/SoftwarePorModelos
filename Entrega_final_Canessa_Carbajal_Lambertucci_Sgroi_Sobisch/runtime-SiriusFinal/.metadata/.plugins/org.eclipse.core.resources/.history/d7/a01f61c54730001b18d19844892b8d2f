@@ -135,7 +135,7 @@
         </edgeMappings>
         <containerMappings name="Package" domainClass="diagramaClasesCompleto::Package">
           <subContainerMappings name="Class" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Clase" childrenPresentation="List">
-            <subNodeMappings name="Attribute " semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Atributo">
+            <subNodeMappings name="Attribute " label="&quot;[nombre + ': '+ tipo/]&quot;" semanticCandidatesExpression="feature:eAllContents" domainClass="diagramaClasesCompleto::Atributo">
               <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="[nombre/]" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -322,39 +322,28 @@
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
-                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionDB" referenceName="configuraciondb">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="dbNombre" valueExpression="['Database'/]"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="tipoProveedor" valueExpression="['Database provider: '/]"/>
-                </firstModelOperations>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionDB" referenceName="configuraciondb"/>
               </initialOperation>
             </ownedTools>
             <ownedTools xsi:type="tool:NodeCreationDescription" name="Language settings" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='LanguajeConfigurator']" iconPath="/my.projectFinal.design/iconos/Carpeta.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
-                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionLenguaje" referenceName="configuracionlenguaje">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="lenguaje" valueExpression="['Languaje: '/]"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="version" valueExpression="['Version: '/]"/>
-                </firstModelOperations>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionLenguaje" referenceName="configuracionlenguaje"/>
               </initialOperation>
             </ownedTools>
             <ownedTools xsi:type="tool:NodeCreationDescription" name="Docker Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='DockerConfigurator']" iconPath="/my.projectFinal.design/iconos/docker (1).png">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
-                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionDocker" referenceName="configuraciondocker">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="nombreContenedor" valueExpression="['Container name: '/]"/>
-                </firstModelOperations>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::ConfiguracionDocker" referenceName="configuraciondocker"/>
               </initialOperation>
             </ownedTools>
             <ownedTools xsi:type="tool:NodeCreationDescription" name="Artifact Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='Artifact']" iconPath="/my.projectFinal.design/iconos/configuration-gears (1).png">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
-                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Artefacto" referenceName="artefacto_contenido">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="['Artifact name: '/]"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="version" valueExpression="['Artifact version: '/]"/>
-                </firstModelOperations>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="diagramaClasesCompleto::Artefacto" referenceName="artefacto_contenido"/>
               </initialOperation>
             </ownedTools>
             <ownedTools xsi:type="tool:NodeCreationDescription" name="Microservices Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='MicroservicesConfigurator']" iconPath="/my.projectFinal.design/iconos/discoveryserver-icon.png">

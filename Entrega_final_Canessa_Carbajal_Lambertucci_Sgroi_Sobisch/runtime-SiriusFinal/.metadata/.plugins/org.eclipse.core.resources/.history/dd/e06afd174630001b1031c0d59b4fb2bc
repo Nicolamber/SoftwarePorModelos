@@ -4,7 +4,7 @@
     <semanticResources>My.diagramaclasescompleto</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_iN4AMDBBEeuY2YJg8Q_IHw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_sHKZgDBBEeuY2YJg8Q_IHw" name="new diagramaClasesFinal" repPath="#_sGd18DBBEeuY2YJg8Q_IHw" changeId="d8c1ab45-8721-4f08-9548-27515f571434">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_sHKZgDBBEeuY2YJg8Q_IHw" name="new diagramaClasesFinal" repPath="#_sGd18DBBEeuY2YJg8Q_IHw" changeId="d8f1afc0-4b5c-429c-a109-fcfcd303c7c5">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']"/>
         <target xmi:type="diagramaClasesCompleto:DiagramaClases" href="My.diagramaclasescompleto#/"/>
       </ownedRepresentationDescriptors>
