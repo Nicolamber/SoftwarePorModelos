@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <diagramaClasesCompleto:DiagramaClases xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto">
   <packages_contenidos nombre="Package Usuario">
-    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Usuario" tieneABM="true">
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Usuario">
       <atributos_contenidos nombre="nombre" visibilidad="private" tipo="String"/>
       <atributos_contenidos nombre="apellido" visibilidad="private" tipo="String"/>
       <relaciones_contenidas destino="//@packages_contenidos.1/@clasificadores_contenidos.0" nombre="toCompra" multiplicidad="oneToMany" origen="//@packages_contenidos.0/@clasificadores_contenidos.0"/>
@@ -18,9 +18,9 @@
       <atributos_contenidos nombre="nombreProducto" visibilidad="private" tipo="String"/>
     </clasificadores_contenidos>
   </packages_contenidos>
-  <artefacto_contenido nombre="Artifact name: " artefactotId="proyecto" descripcion="demoProyecto" version="1.0"/>
-  <configuraciondb dbNombre="Database" dbUsuario="root" dbPuerto="3300" ip="127.0.0.1" dbContrasena="1234567" serverPuerto="5606"/>
-  <configuraciondocker nombreContenedor="Container name: backend" puertoInterior="9000" nombreImagen="backendProyecto"/>
-  <configuracionlenguaje version="Version: 8.14"/>
+  <artefacto_contenido nombre="Artifact name: " version="Artifact version: "/>
+  <configuraciondb dbNombre="Database"/>
+  <configuraciondocker nombreContenedor="Container name: "/>
+  <configuracionlenguaje version="Version: "/>
   <configuracionmicroservicios/>
 </diagramaClasesCompleto:DiagramaClases>

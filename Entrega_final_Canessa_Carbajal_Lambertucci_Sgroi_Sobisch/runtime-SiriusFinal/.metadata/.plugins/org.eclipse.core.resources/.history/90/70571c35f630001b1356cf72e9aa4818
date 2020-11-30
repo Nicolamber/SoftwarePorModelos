@@ -385,7 +385,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <subSections name="Settings" icon="/my.projectFinal.design/iconos/Configuracion.gif">
+          <subSections name="Settings">
             <ownedTools xsi:type="tool:NodeCreationDescription" name="Database Configurator" nodeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@nodeMappings[name='DatabaseConfigurator']" iconPath="/my.projectFinal.design/iconos/BD.png">
               <variable name="container"/>
               <viewVariable name="containerView"/>
@@ -433,7 +433,7 @@
               </initialOperation>
             </ownedTools>
           </subSections>
-          <subSections name="Relations" icon="/my.projectFinal.design/iconos/Relacion.gif">
+          <subSections name="Relations">
             <ownedTools xsi:type="tool:EdgeCreationDescription" name="Unidirectional" edgeMappings="//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@edgeMappings[name='Relations']" iconPath="/my.projectFinal.design/iconos/UniDireccional.gif">
               <sourceVariable name="source"/>
               <targetVariable name="target"/>

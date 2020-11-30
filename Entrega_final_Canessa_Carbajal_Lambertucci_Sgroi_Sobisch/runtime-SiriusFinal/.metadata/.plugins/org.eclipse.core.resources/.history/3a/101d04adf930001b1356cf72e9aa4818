@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <diagramaClasesCompleto:DiagramaClases xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto">
   <packages_contenidos nombre="Package Usuario">
-    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Usuario" tieneABM="true">
+    <clasificadores_contenidos xsi:type="diagramaClasesCompleto:Clase" nombre="Usuario">
       <atributos_contenidos nombre="nombre" visibilidad="private" tipo="String"/>
       <atributos_contenidos nombre="apellido" visibilidad="private" tipo="String"/>
       <relaciones_contenidas destino="//@packages_contenidos.1/@clasificadores_contenidos.0" nombre="toCompra" multiplicidad="oneToMany" origen="//@packages_contenidos.0/@clasificadores_contenidos.0"/>

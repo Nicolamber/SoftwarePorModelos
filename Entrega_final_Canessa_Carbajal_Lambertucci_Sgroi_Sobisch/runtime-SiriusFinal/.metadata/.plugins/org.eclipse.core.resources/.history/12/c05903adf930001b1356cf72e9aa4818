@@ -4,7 +4,7 @@
     <semanticResources>My.diagramaclasescompleto</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_iN4AMDBBEeuY2YJg8Q_IHw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_sHKZgDBBEeuY2YJg8Q_IHw" name="new diagramaClasesFinal" repPath="#_sGd18DBBEeuY2YJg8Q_IHw" changeId="73769744-4fba-4f5d-851c-cf5c0b7d8cc8">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_sHKZgDBBEeuY2YJg8Q_IHw" name="new diagramaClasesFinal" repPath="#_sGd18DBBEeuY2YJg8Q_IHw" changeId="3cd29441-052b-4501-a504-ea0cd7c11212">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']"/>
         <target xmi:type="diagramaClasesCompleto:DiagramaClases" href="My.diagramaclasescompleto#/"/>
       </ownedRepresentationDescriptors>
@@ -217,8 +217,8 @@
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_qmjYwTD5Eeub_P4oAJJpxg" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="114,159,207" foregroundColor="114,159,207">
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@conditionnalStyles.1/@style"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_WHYtQDD2Eeub_P4oAJJpxg" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="194,239,255" foregroundColor="194,239,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/my.projectFinal.design/description/projectFinal.odesign#//@ownedViewpoints[name='VistaProyectoFinal']/@ownedRepresentations[name='diagramaClasesFinal']/@defaultLayer/@containerMappings[name='Package']/@subContainerMappings[name='Class']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Xc-nMDD2Eeub_P4oAJJpxg" name="nombre: String">
